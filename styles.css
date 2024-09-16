@@ -1,0 +1,138 @@
+/* General styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+}
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Loader styles */
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader-content {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+#loading-number {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Container styles */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 50px 0;
+    border-bottom: 2px solid #ddd;
+}
+
+header h1 {
+    font-size: 48px;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #f39c12;
+}
+
+header p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Section styles */
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #f39c12;
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    font-size: 28px;
+    color: #f39c12;
+    margin-bottom: 10px;
+}
+
+.card .details {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+.card:hover .details {
+    display: block;
+}
+
+.card .details li {
+    margin: 8px 0;
+    color: #333;
+}
+
+.card .details li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.card .details li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #666;
+    border-top: 2px solid #ddd;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card h2 {
+        font-size: 24px;
+    }
+}
